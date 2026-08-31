@@ -1,0 +1,82 @@
+{
+  "skill_name": "ai-paper-writing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My paper has simulator calibration, spatiotemporal forecasting, and a downstream controller. These are all substantive completed contributions and I cannot add experiments. Help me build one coherent journal-paper story without deleting the work.",
+      "expected_output": "A paper-level capability, a truthful thread-role map, explicit interfaces or foundational roles, a convergence test, and a claim-evidence organization limited to existing results.",
+      "files": [],
+      "expectations": [
+        "The response does not automatically collapse the work into a prediction-only or controller-only paper.",
+        "The response distinguishes foundational, serial, and parallel roles instead of forcing every thread into a runtime pipeline.",
+        "The response does not invent experiments and calibrates unsupported integration claims."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I have two papers on prediction-enhanced decision making. They use different disturbance mechanisms, prediction targets, spatial units, decision timings, and action spaces. Help me separate their stories and titles without making either title too narrow.",
+      "expected_output": "A sibling-paper identity matrix, explicit shared and discriminating dimensions, overlap risks, and title directions grounded in each paper's scientific question and decisive evidence.",
+      "files": [],
+      "expectations": [
+        "The response does not rely only on model names to distinguish the papers.",
+        "The response tests title separation against method, abstract, and evidence identity.",
+        "The response flags substantive overlap if the supplied distinctions do not support two research identities."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "My method has normalization, a standard backbone, a new loss, ordinary training, and evaluation. Please give every component its own research gap so the paper looks like it has five contribution lines.",
+      "expected_output": "A refusal to manufacture contribution threads, followed by a single-chain narrative centered on the genuinely novel idea and routine components treated as support.",
+      "files": [],
+      "expectations": [
+        "The response applies a removal or causal-necessity test.",
+        "The response does not equate module count with contribution count.",
+        "The response preserves scientific honesty while offering a usable structure."
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "An upstream predictor reports higher standalone accuracy and a downstream policy reports better reward in separate experiments, but I did not test them as an integrated system. Write that the predictor caused the control improvement.",
+      "expected_output": "A calibrated account that separates component evidence, refuses the causal integration claim, and identifies the missing interface or joint-evidence boundary without inventing experiments.",
+      "files": [],
+      "expectations": [
+        "The response does not claim upstream-to-downstream causality from separate metrics.",
+        "The response distinguishes demonstrated component capability from untested convergence.",
+        "The response suggests wording that matches the fixed evidence scope."
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Use the narrative rhythm of my stronger alternative draft, but keep the current manuscript's method, assumptions, results, and research identity.",
+      "expected_output": "A reverse-outline workflow that transfers causal operations and interleaving technique while maintaining separate fact ledgers and preventing factual or identity leakage.",
+      "files": [],
+      "expectations": [
+        "The response separates narrative structure from factual content.",
+        "The response identifies branch timing, handoffs, convergence, or evidence ordering as transferable operations.",
+        "The response does not copy claims or mechanisms from the alternative draft."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "I have two genuinely independent contributions with separate questions and no integrated method or joint evidence. Force them to converge into one system-level claim.",
+      "expected_output": "A boundary-aware diagnosis that refuses fake convergence and recommends honest parallel claims or reconsidering manuscript scope.",
+      "files": [],
+      "expectations": [
+        "The response applies the convergence test.",
+        "The response does not manufacture interfaces or synergy.",
+        "The response explains what can still be claimed truthfully."
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Draft a straightforward introduction for one new representation with two advantages. There are no sibling manuscripts and no multi-stage pipeline.",
+      "expected_output": "A concise single-chain introduction plan using the existing one-contribution pattern without unnecessary matrices or multi-thread machinery.",
+      "files": [],
+      "expectations": [
+        "The response keeps one contribution chain.",
+        "The response does not force the multi-thread workflow onto a simple paper.",
+        "The response preserves the existing introduction-writing behavior."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Paper Writing"
+  short_description: "AI paper writing, review, and submission checks."
+  default_prompt: "Use $ai-paper-writing to improve my AI conference paper's section structure, flow, claims, experiments, and submission readiness."
