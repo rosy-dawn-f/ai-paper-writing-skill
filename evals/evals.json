@@ -77,6 +77,107 @@
         "The response does not force the multi-thread workflow onto a simple paper.",
         "The response preserves the existing introduction-writing behavior."
       ]
+    },
+    {
+      "id": 8,
+      "prompt": "只根据以下材料提炼英文写作经验，不改原文、不提供替换句或修改建议。修订前正文：'The results highlight the importance of adaptive control.' 批注作者 Advisor：'这里想表达的是方法的有效性，注意用词对重点的影响。' 批注作者 Student：'准备补结果。' 本轮未提供实验。请区分批注原话与推导。",
+      "expected_output": "Grounded writing lessons about sentence function, with attribution and limits, without revisions or invented findings.",
+      "files": [],
+      "expectations": [
+        "The response distinguishes the advisor's comment from the student's reply and the assistant's inference.",
+        "It does not rewrite the sentence, recommend a replacement, or treat a comment as authorization to edit.",
+        "It explains the role of the phrase in context without declaring it universally wrong or claiming that effectiveness has been established."
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "Audit scientific meaning only; do not rewrite. Context: our implemented controller can issue a command every second. Whether an optimal command can be found under unknown disturbances remains an open question in this project; no literature corpus is supplied. Sentences: A. 'The controller can issue a command every second.' B. 'Existing controllers calculate the globally optimal command under any disturbance, so we require a new algorithm to solve this open problem.' Explain whether the verbs preserve the intended research state.",
+      "expected_output": "A contextual semantic audit preserving the supported capability in A and distinguishing B's internal tension from its unverified prior-work claim.",
+      "files": [],
+      "expectations": [
+        "It does not mechanically replace can with should or calculate with require.",
+        "It uses the supplied facts and identifies the mismatch between an already solved universal capability and the stated open question.",
+        "It does not invent a field-wide gap or assert that the prior-work claim is false without evidence."
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "只审计下面引言段落的论证完整性，不补写文献事实：'Spatial and temporal variation affects prediction accuracy. Therefore, our new prediction study is necessary.' 给定信息只有因素与准确率有关，没有提供前人工作、局限或具体失败后果。请说明文字已经建立了哪些关系，哪些还没有。",
+      "expected_output": "A bounded diagnosis distinguishing factor importance from evidence of an unmet research requirement.",
+      "files": [],
+      "expectations": [
+        "It identifies missing links between prior-work boundaries, their consequences, and the proposed study.",
+        "It does not claim that no previous method considers spatial or temporal variation.",
+        "It provides findings without inventing citations, mechanisms, or replacement prose."
+      ]
+    },
+    {
+      "id": 11,
+      "prompt": "Audit this results paragraph against the supplied table; do not rewrite it. Setup: the same held-out dataset D and evaluation protocol for both systems. Table 1: mean delay, lower is better; baseline 100 ms, proposed 80 ms. Paragraph: 'Table 1 presents the results. Our system performs much better. Its mean delay decreases by 30%, demonstrating reliability in every deployment.' No other data are available.",
+      "expected_output": "A quantitative and semantic audit using the supplied comparator and settings, detecting the numerical mismatch and unsupported deployment scope.",
+      "files": [],
+      "expectations": [
+        "It verifies that 100 to 80 ms is a 20% relative decrease, without inventing other metrics or data.",
+        "It identifies the unsupported universal deployment inference and the weak interpretive role of a bare table pointer.",
+        "It does not report that the comparator or dataset is missing when the setup supplies them.",
+        "It does not generate a replacement paragraph unless requested."
+      ]
+    },
+    {
+      "id": 12,
+      "prompt": "Check tense and voice in this AI-method excerpt; retain valid differences and do not rewrite merely for uniformity. Method property: 'The encoder maps each input to a vector.' Completed experiment: 'We trained the model on the supplied training set.' Algorithm step: 'Initialize the weights. Update the estimate until convergence.' Future work: 'We will evaluate larger models in future work.' No other claim verification is requested.",
+      "expected_output": "A context-sensitive assessment that recognizes valid present, past, future, and imperative forms.",
+      "files": [],
+      "expectations": [
+        "It does not demand a single tense across the excerpt.",
+        "It recognizes imperatives as appropriate within an algorithm.",
+        "It can report no supported tense or voice issue rather than manufacture edits."
+      ]
+    },
+    {
+      "id": 13,
+      "prompt": "Only interpret these two reviewer annotations; no external usage research, no rewriting, and no suggested edits. Figure label: 'Training result'; reviewer comment: '?'. Phrase: 'reduce vehicle delays'; reviewer comment: '请确认这个表达是否常用'. The figure and field corpus are unavailable. What can and cannot be learned from these comments?",
+      "expected_output": "An uncertainty-aware explanation that limits inference from sparse annotations.",
+      "files": [],
+      "expectations": [
+        "It does not infer a specific plotting or experiment defect from the question mark.",
+        "It distinguishes a request to verify usage from evidence that the collocation is wrong.",
+        "It states the missing visual and corpus limits without claiming to have inspected them or requiring unrelated work to finish the explanation."
+      ]
+    },
+    {
+      "id": 14,
+      "prompt": "Audit only the language of this excerpt. The abstract and main text are independently read units, and the supplied house style permits separate abbreviation definitions. Abstract: 'We evaluate mean absolute error (MAE).' Main text: 'Mean absolute error (MAE) measures prediction error.' Results context: 'On dataset D, baseline accuracy is 55% and proposed accuracy is 60%.' Next sentence: 'This five-percentage-point gain supports improved accuracy on D.' Do not add broad scientific validation.",
+      "expected_output": "A local audit that uses reading-unit and neighboring-context information to avoid false positives.",
+      "files": [],
+      "expectations": [
+        "It does not flag the two permitted abbreviation definitions as an error.",
+        "It recognizes a five-percentage-point gain and the nearby comparator instead of requiring all fields in the next sentence.",
+        "It does not turn the bounded finding into a broader performance claim."
+      ]
+    },
+    {
+      "id": 15,
+      "prompt": "Two bounded tasks. First, correct only the grammar of 'The models predicts a score.' Second, audit language, without rewriting, in this complete miniature draft: Abstract: 'Our method guarantees accuracy on all unseen datasets.' Method: 'The encoder maps inputs to vectors.' Results: 'On dataset D, accuracy increases from 70% to 72% under the same split.' No other data are supplied. Report what the language audit covers and what it cannot verify. Do not plan new experiments.",
+      "expected_output": "A direct grammar correction followed by a scoped language audit of the mini-draft, without unnecessary full-paper restructuring.",
+      "files": [],
+      "expectations": [
+        "It corrects predicts to predict without adding a story outline or literature search to the grammar task.",
+        "It identifies the universal guarantee as exceeding the provided one-dataset evidence.",
+        "It completes the requested audit and states its limits instead of waiting for new experiments.",
+        "It preserves the no-rewrite boundary for the second task."
+      ]
+    },
+    {
+      "id": 16,
+      "prompt": "Write a short Capability First abstract from only these facts. We introduce a constrained task: on-device classification with user-approved abstention when memory exceeds a limit. Our prototype selects either inference or abstention before allocation. In a pilot with two supplied workloads, it respected the limit on both; the ordinary fixed-execution comparator exceeded it on one. No claim of being first, broad superiority, or deployment readiness has been verified. There is no standalone Capability First example file. Produce the abstract rather than request a new template.",
+      "expected_output": "A capability-led abstract using available guidance and the supplied evidence, with honest pilot scope.",
+      "files": [],
+      "expectations": [
+        "It completes an actual abstract without searching for or requiring a nonexistent example file.",
+        "It does not invent metrics, task-wide priority, competitor incapability, or broad generalization.",
+        "It presents the capability and construction with the pilot comparison and its limited scope."
+      ]
     }
   ]
 }

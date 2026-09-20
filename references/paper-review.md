@@ -4,7 +4,7 @@ Use this reference for adversarial, reviewer-style self-review before submission
 
 ## Goal
 
-Detect rejection risks early and revise the paper until every central claim is clear, defensible, and supported.
+Detect rejection risks and assess whether central claims are clear, defensible, and supported. Follow the requested audit or revision scope; unresolved research questions need not prevent delivery of a completed review.
 
 ## Critical Rule
 
@@ -49,6 +49,8 @@ Check whether the paper has at least one strong acceptance path:
 - Are terms, symbols, and notation consistent across sections?
 - Does each paragraph carry one clear message?
 
+When language coverage is requested or wording appears to change scientific meaning, read `readability-review.md`. Audit semantic commitment as well as grammar. Consolidate one finding when the same passage raises overlapping language, evidence, and clarity concerns.
+
 ### 3. Experimental Strength
 
 - Are improvements over strong baselines meaningful?
@@ -75,11 +77,17 @@ Check whether the paper has at least one strong acceptance path:
 
 ## Adversarial Writing Workflow
 
-1. Read as a skeptical reviewer.
-2. Answer every self-review question with explicit evidence from the paper.
-3. Mark each item as `pass`, `needs revision`, or `needs new experiment`.
-4. Revise claims, writing, experiments, method scope, or limitations.
-5. Repeat until no blocking or major rejection risk remains.
+1. Read as a skeptical reviewer within the requested scope.
+2. Answer applicable questions with explicit evidence; distinguish unavailable evidence from a demonstrated defect.
+3. Classify findings as supported, context-dependent, or unverified. Mark relevant work as `pass`, `needs revision`, or `needs new experiment`; skip inapplicable items.
+4. Make only requested revisions. For an audit, report findings without automatically producing replacement prose or changing files.
+5. Recheck changes and affected claims. Finish once scoped work is complete; list unresolved needs for sources, experiments, or author decisions. Repeat only when new changes or findings justify another pass.
+
+Briefly identify reviewed sections/layers and unverified matters. Use a coverage table only when scale warrants it. Do not imply that a language review validated experiments or that a wording edit supplied missing evidence.
+
+## Rejection Recovery
+
+Use only for rejection or major-revision work. Cluster concerns into contribution, validity, evidence, presentation, and venue fit. Distinguish writing repairs from new experiments, claim repositioning, or artifact improvements; address the underlying concern before cosmetic resubmission. Consider a different venue or project direction only when the evidence warrants it. Rejection alone does not invalidate the project.
 
 ## Output Pattern
 

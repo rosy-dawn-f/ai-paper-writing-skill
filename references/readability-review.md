@@ -1,106 +1,69 @@
-# Readability And Review Readiness
+# Readability And Language Audit
 
-Use this reference when polishing manuscript text, captions, figures/tables, submission checks, common reviewer criticisms, rebuttal prep, or post-rejection revision.
+Use for local polishing, language audits, caption wording, or learning writing techniques from annotations. Follow the operation and scope selected in SKILL.md; these checks do not authorize rewriting.
 
-## Readability Axes
+## Four Axes
 
-Diagnose prose through four axes:
+Assess logical strength, defensibility, confusion time, and information density. Combine applicable checks in one reading; they are not six mandatory passes. Inspect enough surrounding text to resolve references and avoid false missing-information reports. Distinguish linguistic findings from unverified scientific facts.
 
-- Logical strength: the reasoning itself is coherent; connectives only reflect real logic.
-- Defensibility: claims are supported by references, facts, experiments, or appropriately cautious wording.
-- Confusion time: readers spend little time wondering what a concept, pronoun, symbol, component, or result means.
-- Information density: text and visuals deliver useful information without familiar filler or buried conclusions.
+## Six Checks
 
-## Logical Strength
+### 1. Sentence Function And Semantic Commitment
 
-Do not use connectives to fake logic. Check whether phrases like "therefore", "to this end", "accordingly", "first", "moreover", and "last but not least" actually match the relationship between clauses or items.
+Identify the intended role of a key sentence: established fact, research need, research action, observation, interpretation, or significance. Check whether its subject, main verb, modality, and qualifiers convey that role and the correct research object.
 
-Prefer direct structure:
+For example, reporting that results "highlight importance" may miss a passage's intended effectiveness claim. A capability statement may also obscure an unmet research need. Diagnose the contextual mismatch rather than judging a phrase in isolation.
 
-- State the problem.
-- State the design choice.
-- State the evidence.
-- State the conclusion.
+Do not equate `can` with completed research, `should` with an unsolved problem, or `calculate` with lack of novelty. Never manufacture a gap through substitution. Distinguish a simulation finding from a deployment claim and an observation from a causal explanation. Phrase-level revisions must preserve scientific meaning.
 
-If modules are unordered, introduce them as components rather than pretending they form a ranked sequence.
+### 2. Reasoning And Gap Completion
 
-## Defensibility
+Trace the relationship relevant to the paragraph: important requirement, specific boundary of existing work, consequence of that boundary, and corresponding research action. A statement that a factor matters does not by itself establish an unmet requirement.
 
-Review every strong statement as if a skeptical reviewer is asking "How do you know?"
+Connectives must reflect actual cause, contrast, refinement, or sequence. Distinguish execution order from conceptual dependence; unordered components need no invented chronology.
 
-Common repairs:
+Do not invent prior-work limitations to complete the chain. A literature claim may remain unverified in a bounded language audit. Constructing or verifying one requires source evidence through `literature-positioning.md`.
 
-- Add citations for claims about field pain points, known limitations, or practical consequences.
-- Add direct experiment references for causal explanations.
-- Use cautious language for indirect evidence.
-- Replace broad claims such as "solves", "proves", "significantly", or "universal" when evidence is narrower.
-- Avoid demeaning prior work; contrast scope, assumptions, data, objective, or empirical behavior.
+### 3. Definitions, Mechanisms, And Referents
 
-## Confusion Time
+Check that a key object has a usable meaning and function before its design or results depend on it. Expanding an acronym may not explain its role. A phrase such as "responds indirectly" may require the intermediate mechanism.
 
-Reduce "what is this?" moments:
+Resolve `this`, `the method`, numbered summaries, and cross-section references to identifiable targets. Check nearby sentences, definitions, and figures before reporting a gap. Do not require every definition to occur in the immediately preceding sentence.
 
-- Define a concept near first mention.
-- Explain a named component by its function or implementation immediately.
-- Break long sentences when relative pronouns or nested clauses create ambiguity.
-- Use topic sentences near the start of paragraphs.
-- Keep notation, symbols, abbreviations, and capitalization consistent.
+For deeper flow or implementation issues, use `paragraph-flow.md` or `section-method.md` only when that work is within scope.
 
-## Information Density
+### 4. Evidence Expression And Visual Interpretation
 
-Get to the point quickly, especially at section starts. Avoid retelling common field history unless it directly motivates the gap.
+Check whether an effectiveness statement identifies the relevant conditions, comparator, metric, direction and magnitude, and supported inference. These can be supplied by adjacent text or a clearly referenced table; every sentence need not repeat them.
 
-For figures and tables:
+A figure/table pointer locates evidence. The surrounding prose explains what matters. A results visual supports an observation or claim; a method visual explains structure or process. Captions and labels should identify essential terms and settings without duplicating a long discussion.
 
-- Make captions state the question and key conclusion, not just describe the plot.
-- Explain abbreviations and unusual settings in or near the visual.
-- Put the sentence analyzing an important result close to the figure/table reference.
-- Design tables around the comparison the reader should make, even if that repeats a baseline.
-- Move long hyperparameter detail to appendix unless it is essential to a claim.
+Do not transcribe every cell or invent missing numbers. Use `section-experiments.md` for quantitative reporting and result-interpretation details. Without the visual or data, report the inspection limit rather than asserting that its contents were checked.
 
-## Detail Checklist
+### 5. Tense, Voice, Terminology, And Convention
 
-Use this after major story issues are fixed:
+Judge tense by its discourse role: stable properties, completed procedures, reported findings, or future work. Valid changes need no forced unification. Imperatives can fit algorithms or instructions; an unexplained shift into commands may disrupt descriptive prose.
 
-- Ensure figures and tables together tell the complete story.
-- Check symbol, abbreviation, capitalization, citation, and reference consistency.
-- Verify all figures/tables are mentioned in order.
-- Increase figure text and legend size if readability is marginal.
-- Improve table scanning with grouping, bolding, removal of redundancy, and clear baselines.
-- Place important information in prominent positions.
-- Add appendix/code details that improve reproducibility.
+Keep names, abbreviations, symbols, and manuscript voice stable for the same referent. Preserve meaningful distinctions. Abstract and body may independently introduce abbreviations; follow the applicable reading unit and venue convention.
 
-## Last-Hours Submission Checklist
+A collocation queried by a reviewer is not automatically wrong. Verify field usage when making a convention claim; otherwise retain its uncertain status. Treat numbering, capitalization, and citation placement as style-dependent, not universal language rules.
 
-Prioritize desk-reject risks first:
+### 6. Information Progression And Structural Promises
 
-- Correct page count and formatting.
-- Anonymous submission compliance, including acknowledgments, code, demos, metadata, and supplementary materials.
-- No missing figures, formulas, tables, captions, or references.
-- No LaTeX placeholders, question marks, broken references, or compilation artifacts.
-- All numbers copied correctly from final experiments.
-- Figures are vectorized or high enough resolution.
-- Captions are grammatical and punctuated consistently.
-- Section title capitalization is consistent.
+Identify the paragraph's main message and what it adds: definition, mechanism, evidence, interpretation, or synthesis. A coherent paragraph may contain several supporting moves. The opening should orient readers without a rigid topic-sentence formula.
 
-## Common Negative Reviews And Repairs
+Check that headings, stated stage counts, and module lists match the material. Repetition across abstract, introduction, and conclusion can serve different reading levels; flag it when it displaces needed information or changes the story, not merely because concepts recur.
 
-- Unprofessional presentation: missing key references, messy structure, omitted required supplements, or setup mismatch. Repair with recent reference coverage, aligned configuration, and complete submission materials.
-- Validity questioned: implausible numbers, overclaiming, flawed setup, or weak argumentation. Repair with more experiments, clearer scope, and rigorous wording.
-- Prior work not respected: missing latest work, weak baselines, unfair comparison, or dismissive framing. Repair with updated comparisons and evidence-based contrast.
-- Lack of novelty: unclear story, incremental design, or known knowledge. Repair by sharpening the core contribution and emphasizing the strongest supported insight.
-- Poor presentation: grammar, missing details, hard-to-follow writing. Repair through focused rewriting, topic sentences, definitions, and better visuals.
-- Disagreement with approach: reviewer doubts the route or experimental design. Repair with additional evidence, precedent from relevant literature, and precise limitation statements.
+## Findings And Learning Output
 
-## Rejection Recovery
+Ground each consequential finding in a short source span:
 
-Treat rejection as diagnostic data, not a verdict on the project. Cluster reviews by underlying concern, then decide whether to:
+`Location/span | Likely reader interpretation | Mismatch and effect | Certainty`
 
-- repair writing/story only,
-- add decisive experiments,
-- reposition the claim,
-- target a more suitable venue,
-- release or improve code/data/supplement,
-- abandon only if the core claim cannot be defended.
+Use `supported finding`, `context-dependent`, or `unverified` for certainty. Severity depends on scientific impact, not grammatical size. Consolidate overlapping findings, and allow "no supported issue found." Use prose for a small task rather than forcing a table or score.
 
-Do not simply resubmit with cosmetic changes when reviewers identified validity, fairness, or novelty problems.
+When explaining annotations, distinguish reviewer statements from inferred lessons, preserve authorship, and identify whether a quotation is before or after revision. A lone question mark does not establish a specific diagnosis. Offer an observable learning check with its limits; obey requests excluding rewrites or correction advice.
+
+## Conditional Follow-Up
+
+Submission-format checks belong to `final-submission-checklist.md`; reviewer criticism and rejection recovery belong to `paper-review.md`. Read them only for that requested work. Complete the current language task even when separate factual or experimental questions remain unresolved.

@@ -99,12 +99,12 @@ Do not use this order mechanically; choose the smallest structure that tests the
 For each result paragraph:
 
 1. State the question being tested.
-2. Identify the comparison.
-3. Report the main result.
+2. Identify the setting, comparator, and metric.
+3. Report the direction and magnitude of the main result.
 4. Interpret what it supports.
 5. State boundaries if the result is narrow.
 
-Avoid claiming causality unless ablation or analysis supports it.
+Use neighboring setup text and referenced tables where they already supply this information; do not repeat all fields in every sentence. Check percentage denominators, units, and whether a change is relative or in percentage points. Verify calculations against supplied data; when values or comparison bases are missing, identify the gap without fabricating them. A number alone does not justify generalization or causality; ablation or analysis must support the claimed inference.
 
 Result paragraph skeleton:
 
@@ -113,6 +113,8 @@ Result paragraph skeleton:
 ## Figure/Table Writing Rules
 
 Tables and figures are part of the argument, not decoration.
+
+A reference locates a visual; prose explains its relevant contents and role. For results, identify the key comparison or trend and the supported inference. For method diagrams, explain components and their relationships. Match labels with the text. Analyze what matters without repeating the caption or transcribing every value. If a visual is unavailable, distinguish a wording audit from verification of its contents.
 
 Hard table rules:
 
