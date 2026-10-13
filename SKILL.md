@@ -36,7 +36,7 @@ Paths beginning with `references/` resolve from this skill directory; bare filen
 - Local polishing, language audits, caption wording, or lessons from annotations: `references/readability-review.md`.
 - Paragraph organization, reverse outlines, or flow breaks: `references/paragraph-flow.md`.
 - Ideation, contribution statements, outlines, or paper-level story: `references/paper-architecture.md`.
-- Abstract: `references/section-abstract.md`.
+- Abstract drafting, revision, sentence roles and detail levels, or learning from reference abstracts: `references/section-abstract.md`.
 - Introduction: `references/section-introduction.md`.
 - Related work: `references/section-related-work.md`.
 - Method, pipeline, module motivation, or implementation explanation: `references/section-method.md`.
@@ -45,7 +45,7 @@ Paths beginning with `references/` resolve from this skill directory; bare filen
 - Whole-paper review, rebuttal preparation, or rejection recovery: `references/paper-review.md`.
 - Submission, camera-ready, LaTeX, notation, citations, anonymity, supplement privacy, or deadline checks: `references/final-submission-checklist.md`.
 
-Choose by the requested work, not just the section name: auditing one abstract sentence starts with readability; drafting the abstract starts with its section guide.
+Choose by the requested work, not just the section name: auditing an abstract sentence's grammar or meaning starts with readability; deciding what its sentences should say, how much detail to include, or how reference abstracts work starts with the abstract guide.
 
 Add specialized guidance only when needed:
 

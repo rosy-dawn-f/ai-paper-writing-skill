@@ -178,6 +178,58 @@
         "It does not invent metrics, task-wide priority, competitor incapability, or broad generalization.",
         "It presents the capability and construction with the pilot comparison and its limited scope."
       ]
+    },
+    {
+      "id": 17,
+      "prompt": "根据这些教学用事实写一段英文摘要，不要把方法章节压缩搬进摘要。任务：队列调度用于减少请求等待；只看当前队列可能在突发负载到来后才调度。贡献是用局部到达模式和时间变化预测短期负载，再结合近期观测协调资源分配。实现采用256维状态、五个动作等级、三个工作节点、四层网络；这些配置不是创新。仿真在80%平均负载下，对比同一无预测调度基线，平均等待时间降低9%；没有其他负载条件的结果。要让非本项目读者读懂方法的特点，并保留可判断效果的证据。只给摘要。",
+      "expected_output": "A readable abstract with proportionate orientation, a specific need, recognizable predictive scheduling mechanism, and a bounded quantitative comparison without routine configuration details.",
+      "files": [],
+      "expectations": [
+        "It identifies the task and motivating limitation without crowding the opening with implementation details.",
+        "It retains what the predictor captures and how predictions inform scheduling, rather than only saying that prediction and learning are combined.",
+        "It omits incidental state dimensions, action counts, worker counts, and network depth.",
+        "It preserves the 9% waiting-time result, comparator, simulation scope, and 80% load condition rather than hiding the condition behind matched settings.",
+        "It provides only the requested abstract, without a mandatory outline, table, or extra experiments."
+      ]
+    },
+    {
+      "id": 18,
+      "prompt": "只逐句分析这两个教学摘要的句子任务、宏微观程度和措辞，不改写。A: 'Queue scheduling allocates processing capacity to incoming requests. Reactive schedulers can respond after bursts have formed. We introduce a forecast-guided scheduler. A local arrival predictor and a resource allocator cooperate to choose appropriate allocations. Simulations show better performance than the reactive baseline.' B: 'We introduce scheduling under a strict memory budget. To keep prediction feasible, the scheduler uses a compact arrival summary. It uses a two-layer encoder and a batch size of 64. On two synthetic workloads under the stated memory budget, mean waiting time falls by 8% relative to baseline B. These results establish reliable performance in every production deployment.' 哪些写法可以迁移？能否据此要求所有摘要先定义研究对象？不要外查文献。",
+      "expected_output": "A sentence-by-sentence comparison separating rhetorical role, detail granularity, lexical precision, and evidence limits, without an unsolicited revision or a universal opening rule.",
+      "files": [],
+      "expectations": [
+        "It inspects every sentence and its connection, rather than only returning a generic problem-method-results outline.",
+        "It recognizes the functional opening in A and the legitimate capability-led opening in B; it does not impose definition-first writing or infer venue-wide conventions.",
+        "It identifies A's appropriate allocations and better performance as underspecified, despite the useful problem-to-design sequence.",
+        "It questions B's incidental encoder and batch-size details while retaining the memory boundary and quantitative comparison.",
+        "It flags B's universal deployment claim as unsupported by two synthetic workloads and does not copy it as a good concluding pattern.",
+        "It distinguishes observed choices from transferable principles and does not rewrite or search externally."
+      ]
+    },
+    {
+      "id": 19,
+      "prompt": "Revise a capability-first abstract from these facts. The main contribution is a four-bit representation that permits on-device classification within a hard 2 MB memory budget. A prototype fits on two pilot workloads; a sixteen-bit comparator exceeds that budget on one. Four-bit precision and the memory limit define the contribution, while batch size 32 and three training epochs are incidental. Open with the capability, not a textbook definition. No accuracy improvement, universal deployment reliability, or first-ever claim has been verified. Produce a short abstract.",
+      "expected_output": "A capability-led abstract that keeps contribution-defining technical detail and pilot evidence while omitting incidental training settings.",
+      "files": [],
+      "expectations": [
+        "It honors the requested opening and does not prepend a generic definition or literature taxonomy.",
+        "It preserves four-bit precision, the 2 MB budget, the sixteen-bit comparator, and the two-workload scope.",
+        "It removes incidental training settings without applying a blanket ban on numbers or technical detail.",
+        "It does not invent accuracy gains, deployment generality, or novelty priority."
+      ]
+    },
+    {
+      "id": 20,
+      "prompt": "Revise an abstract using the current version only; an older draft is supplied solely for smoother narrative flow. Old draft: dynamic control-zone lengths, explicit communication-delay compensation, and an unverified threefold forecast-horizon extension. Current implementation: fixed zones, local transition statistics plus temporal patterns for short-term prediction, forecasts and observations guiding coordinated commands, idealized communication, and no delay-compensation test. Evidence: prediction error is 12% lower than predictor P; mean traffic delay is 7% lower than controller C; low-speed episodes begin later than under no control. These are supplied illustrative results. The central contribution is anticipatory regulation. Keep the abstract readable and do not detail action encodings.",
+      "expected_output": "A concise, current-version abstract transferring narrative flow without importing obsolete facts, unsupported mechanisms, or comparator ambiguity.",
+      "files": [],
+      "expectations": [
+        "It uses the current fixed-zone predictive control mechanism and omits obsolete zone adaptation and horizon-extension claims.",
+        "It frames anticipation as the objective without claiming communication-delay compensation under idealized communication.",
+        "It retains the distinct predictor, controller, and no-control comparators rather than merging the results into one comparison.",
+        "It does not infer that the forecast error reduction alone caused the traffic-delay improvement.",
+        "It explains the identifying method idea without action-encoding details or requiring unrelated manuscript material."
+      ]
     }
   ]
 }
